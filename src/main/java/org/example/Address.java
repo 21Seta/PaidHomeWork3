@@ -9,11 +9,4 @@ public class Address {
     String City = faker.address().city();
     String Zipcode = faker.address().zipCode();
 
-
-    public void AddressInfo(){
-        System.out.println("Country is : " + Country);
-        System.out.println("City is : " + City);
-        System.out.println("Zipcode is : " + Zipcode);
-        System.out.println();
-    }
 }

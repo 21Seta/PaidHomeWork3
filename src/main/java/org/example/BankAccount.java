@@ -5,11 +5,7 @@ import net.datafaker.Faker;
 public class BankAccount {
 
     Faker faker = new Faker();
-    double   Balance ;
-
-    public BankAccount() {
-        this.Balance = faker.number().randomDouble(2, 0, 500);
-    }
+    double   Balance = faker.number().randomDouble(2, 0, 500);;
 
     public void CurrentBalance() {
         System.out.println("მიმდინარე ბალანსი " + Balance + " ₾");

@@ -65,6 +65,16 @@ public class Main
         product.printPriceAfterDiscount();
 
 
+        System.out.println();
+        System.out.println(" ამოცანა : 8");
+        System.out.println();
+
+        Address address = new Address();
+        System.out.println("Country : " + address.Country);
+        System.out.println("City : " + address.City);
+        System.out.println("ZipCode : " + address.Zipcode );
+
+
 
 
 

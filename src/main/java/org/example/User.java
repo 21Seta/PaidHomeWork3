@@ -3,22 +3,22 @@ package org.example;
 import net.datafaker.Faker;
 
 public class User {
-    Address address;
     String name;
     String email;
+    Address address;
 
 Faker faker = new Faker();
 
 public User (String name){
-  this.name = faker.name().firstName();
-    this.address = new Address();
+  this.name = faker.name().fullName();
+  this.address = new Address();
+
 }
 
 public User (String name , String email){
-    this.name = faker.name().firstName();
+    this(name);
     this.email = faker.internet().emailAddress();
-    this.address = new Address();
-    address.AddressInfo();
+
 }
 
 }
